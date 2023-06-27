@@ -7,6 +7,7 @@
     <title>Dream Builds</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/a01ca2d2c7.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -19,6 +20,26 @@
                     <li><a href="mailto:shahniket643@gmail.com" class="nav_link">Contact</a></li>
                     <li><a href="#latest" class="nav_link nav_link-primary">Pre-Built</a></li>
                 </ul>
+
+                <button class="btn_menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="menu_backdrop">
+                    <button class="btn_menu btn_menu-close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu_links">
+                        <li class="menu_list">
+                            <a href="#" class="menu_link" onclick="closeMenu()">Home</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="#featured" class="menu_link" onclick="closeMenu()">PCs</a>
+                        </li>
+                        <li class="menu_list">
+                            <a href="" class="menu_link no_cursor" onclick="closeMenu()">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <header>
@@ -85,12 +106,12 @@
             <div class="container">
                 <div class="row">
                     <h2 class="section_title">
-                        Featured <span class="text_blue">PCs</span>
+                        Featured <span class="text_blue">Components</span>
                     </h2>
                     <div class="pcs">
                         <div class="pc">
                             <figure class="pc_img-wrapper">
-                                <img src="./assets/featured_pc_1.png" alt="" class="pc_img">
+                                <img src="./assets/featured_pc_1.png~" alt="" class="pc_img">
                             </figure>
                             <div class="pc_title">
                                 The Intel Beast
@@ -335,7 +356,7 @@
             <div class="container">
                 <div class="row row_column">
                     <h2>Explore more <span class="text_blue">PCs</span></h2>
-                    <a href="featured">
+                    <a href="#featured">
                         <button class="btn">Browse PCs</button>
                     </a>
                 </div>
