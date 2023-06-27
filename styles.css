@@ -289,6 +289,7 @@ button:active {
     max-height: 380px;
     transition: all 300ms;
     cursor: no-drop;
+    overflow: hidden;
 }
 
 .pc_img-wrapper {
